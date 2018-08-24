@@ -8,16 +8,17 @@
 	</head>
 
 	<body>
-		<div class="menu">
-			<ul>
-				<li>
+		<div>
+			<ul class="nav">
+				<li class="nav-item">
 					<a href="#1">首页 </a>
 				</li>
-				<li>
-					<a href="" >宝安区</a><span ></span>
-					<ul>
+				
+				<li class="nav-item" onmouseover="displaySubMenu(this)" onmouseout="hisdeSubMenu(this)">
+					<a href="">宝安区</a><span ></span>
+					<ul class="child-nav">
 						<li>
-							<a href="" >沙井</a>
+							<a href="">沙井</a>
 						</li>
 						<li>
 							<a href="" >西乡</a>
@@ -33,9 +34,10 @@
 						</li>
 					</ul>
 				</li>
-				<li>
+				
+				<li class="nav-item" onmouseover="displaySubMenu(this)" onmouseout="hisdeSubMenu(this)">
 					<a href="#2">龙华新区</a>
-					<ul>
+					<ul class="child-nav">
 						<li>
 							<a href="" >清湖</a>
 						</li>
@@ -56,9 +58,10 @@
 						</li>
 					</ul>
 				</li>
-				<li>
+				
+				<li class="nav-item" onmouseover="displaySubMenu(this)" onmouseout="hisdeSubMenu(this)">
 					<a href="#3">龙岗区</a>
-					<ul >
+					<ul class="child-nav">
 						<li>
 							<a href="">平湖</a>
 						</li>
@@ -73,9 +76,10 @@
 						</li>
 					</ul>
 				</li>
-				<li>
+				
+				<li class="nav-item" onmouseover="displaySubMenu(this)" onmouseout="hisdeSubMenu(this)">
 					<a href="#4">光明新区</a>
-					<ul >
+					<ul class="child-nav">
 						<li>
 							<a href="" >公明</a>
 						</li>
@@ -84,9 +88,10 @@
 						</li>
 					</ul>
 				</li>
-				<li>
+				
+				<li class="nav-item" onmouseover="displaySubMenu(this)" onmouseout="hisdeSubMenu(this)">
 					<a href="#5">深圳关内</a>
-					<ul >
+					<ul class="child-nav">
 						<li>
 							<a href="" >南山</a>
 						</li>
@@ -101,9 +106,10 @@
 						</li>
 					</ul>
 				</li>
-				<li>
+				
+				<li class="nav-item" onmouseover="displaySubMenu(this)" onmouseout="hisdeSubMenu(this)">
 					<a href="#6">东莞小产权</a>
-					<ul >
+					<ul class="child-nav">
 						<li>
 							<a href="" >塘厦</a>
 						</li>
@@ -127,7 +133,8 @@
 						</li>
 					</ul>
 				</li>
-				<li>
+				
+				<li >
 					<a href="#7">深圳二手房</a>
 				</li>
 				<li>
@@ -142,14 +149,13 @@
 			</ul>
 		</div>
 		<div class="content">
-			<div style="margin-left: 30%;padding-top: 10%;">
+			<div>
 				<p>我那么努力，就是为了有一个安稳的家，100%真房源</p>
-				<div style="padding-top: 20px; 0">
-				<input type="text" value="" placeholder="请输入关键字..." style="width：800px;height: 50px;border: 0px; "/>
-				<buttom style="background:rgb(0,153,255) ;width: 100px;height: 100px;border: 1px solid rgb(0,153,255);">搜索</buttom>						
-				</div>
 				<div >
-					<ul class="ardess">
+				<input type="text" placeholder="请输入关键字..."/>
+				<button class="search">搜索</button>						
+				</div>
+					<ul>
 						<li><a href="">沙井</a></li>
 						<li><a href="">石岩</a></li>
 						<li><a href="">松岗</a></li>
@@ -162,10 +168,9 @@
 						<li><a href="">坂田</a></li>
 						<li><a href="">公明</a></li>
 						<li><a href="">光明</a></li>
-					</ul>
 				</div>
-
 			</div>
-		</div>
+		
 	</body>
+	<script src="js/navtitle.js" type="text/javascript" charset="utf-8"></script>
 </html>
